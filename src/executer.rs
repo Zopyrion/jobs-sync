@@ -3,6 +3,8 @@ fn verify() -> () {
 
 }
 
-fn execute(int argc, char *argv[]) -> (){
+pub fn execute(filename: &String) -> (){
+
+	println!("{} \n", filename);
 
 }

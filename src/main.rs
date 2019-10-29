@@ -1,6 +1,6 @@
 use std::env;
 use std::process;
-mod header;
+mod executer;
 
 fn main() {
     let args: Vec<_> = env::args().collect();
@@ -10,5 +10,6 @@ fn main() {
 		process::exit(0);
     }
 	
-	println!("args len {}\n", args.len());
+	let filename = &args[1];
+	executer::execute(filename);
 }
